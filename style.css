@@ -1,0 +1,353 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*VARIABLES*/
+:root {
+    --FONT-S: 25px;
+    --FONT: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --BORDER: 0.2px solid black;
+    --BORDER-R: 8px solid black;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    background-image: linear-gradient(to right,rgba(101, 223, 201,0.6),rgba(108, 219, 235,1));
+}
+
+.top {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    z-index: 1;
+}
+
+.top a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+.info {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+    background-color: black;
+    height: 70px;
+    z-index: 1;
+}
+
+.inf {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 0.6rem;
+    background: linear-gradient(to right, #00ff80,#00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+
+h1{
+    font-family: var(--FONT);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--FONT-S);
+    color: solid black;
+}
+
+/* First Image*/
+.first {
+    display: flex;
+    gap: 10px;
+    padding-top: 7rem;
+}
+
+.first img{
+    width: 450px;
+    border: var(--BORDER);
+    border-right: var(--BORDER-R);
+}
+
+/* Second Image*/
+.second {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: row-reverse;
+}
+
+.second img{
+    width: 450px;
+    border: var(--BORDER);
+    border-left: var(--BORDER-R);
+}
+
+/* Third Image*/
+.third {
+    display: flex;
+    gap: 10px;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+.third img{
+    width: 450px;
+    border: var(--BORDER);
+    border-right: var(--BORDER-R);
+}
+
+/* Image Text*/
+.text{
+    position: relative;
+    top: -45px;
+    display: flex;
+    justify-content: center;
+    color:deeppink;
+    font-size: 20px;
+    border: 1.5px solid black;
+    text-shadow: 1.3px 1px 1px black;
+    width: 450px;
+}
+
+/*Bottom text*/
+
+.bottom {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9rem;
+    gap: 1rem;
+    border: 2px solid black;
+    background-image: linear-gradient(to right, rgb(17, 17, 17), rgba(10, 10, 10, 0.7), rgb(17, 17, 17));
+}
+
+.bottom h2 {
+    color:darkmagenta;
+    font-size: 50px;
+}
+
+/*Button*/
+.button{
+    height: 50px;
+    width: 260px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 32px;
+    color: gold;
+}
+
+/*Footer*/
+footer {
+    background-color: orange;
+    height: 9rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 0.6rem;
+    font-size: 1.5rem;
+}
+
+.cinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.4rem;
+}
+.cinfo h3{
+    font-size: 1.1rem;
+    padding-left: 5.5rem;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.1rem;
+}
+.hours h3{
+    font-size: 1.1rem;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.1rem;
+}
+
+.cont a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: azure;
+    text-shadow: 1px 1px 2px black;
+}
+
+.info a:hover {
+    text-shadow: none;
+}
+
+@media screen and (max-width: 1240px) {
+    h1{
+        font-size: 20px;
+    }
+
+    .inf {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 10rem;
+        padding-top: 0.9rem;
+        font-size: 30px; 
+    }
+    
+    .top a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        padding-top: 5px;
+    }
+
+    .text{
+        position: relative;
+        top: -45px;
+        display: flex;
+        justify-content: center;
+        color:deeppink;
+        font-size: 20px;
+        border: 1.5px solid black;
+        text-shadow: 1.3px 1px 1px black;
+        width: 350px;
+    }
+
+    .first {
+        display: flex;
+        gap: 5px;
+        padding-top: 7rem;
+    }
+    
+    .first img{
+        width: 350px;
+        height: 250px;
+        border: var(--BORDER);
+        border-right: var(--BORDER-R);
+    }
+    .second {
+        display: flex;
+        gap: 5px;
+        padding-top: 7rem;
+    }
+    
+    .second img{
+        width: 350px;
+        height: 250px;
+        border: var(--BORDER);
+        border-right: var(--BORDER-R);
+    }
+    .third {
+        display: flex;
+        gap: 5px;
+        padding-top: 7rem;
+    }
+    
+    .third img{
+        width: 350px;
+        height: 250px;
+        border: var(--BORDER);
+        border-right: var(--BORDER-R);
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .down h3{
+        font-size: 0.8rem;
+        
+    }
+    .down a{
+        font-size: 0.8rem;
+    }
+    .foot {
+        font-size: 1rem;
+    }
+
+    .cinfo h3{
+        padding-left: 3.5rem;
+    }
+
+    .button{
+        height: 30px;
+        width: 150px;
+    }
+    
+    .button a{ 
+        font-size: 17px;
+    }
+
+    .bottom h2 {
+        font-size: 40px;
+    }
+}
+
+.up {
+    position: absolute;
+    right: 6rem;
+    bottom: -57rem;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid aqua;
+}
+
+
+/*Up Button*/
+/* .up a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    text-transform:uppercase;
+    position: absolute;
+    left: -1rem;
+    bottom: -3.5rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.up a:hover {
+    color:;
+    text-shadow: 1px 1px 1px black;
+} */

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Dan Dumuta">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css" type="text/css">
+    <title>Web Site</title>
+</head>
+<body>
+    <header>
+        <div class="home">
+            <a href="http://127.0.0.1:5500/index.html">Back</a>
+        </div>
+    </header>
+    <main>
+        <div class="box">
+            <form action="message">
+                    <!-- <legend>Send Us A Message</legend> -->
+
+                <div class="contact">
+                <p>
+                <label for="Name">Name:</label>
+                <input type="text" name="firstName" id="Name" placeholder="Enter your name here"
+                    autocomplete="on" required autofocus>
+                </p>
+                <p>
+                <label for="Email">Email:</label>
+                <input type="text" name="Email" id="Email" placeholder="Enter your email here"
+                    autocomplete="on" required>
+                </p>
+                </div>
+                    
+                <div class="message">
+                <label id="message">Type Your Message Here:</label>
+                <textarea name="message" id="message1" cols="50" rows="20"
+                    placeholder="Click Me!"></textarea>
+                </div>
+                
+                <div class="buttons">
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>
